@@ -38,6 +38,9 @@
 }
 
 .ul-list {
-  
   list-style: none;
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  margin-top: 50px;
 }
