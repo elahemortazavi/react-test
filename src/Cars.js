@@ -5,9 +5,13 @@ const Cars = (props) => {
       <div>
         <p>i have a car:</p>
         <p>model: {props.model}</p>
-        <p>model: {props.speed}</p>
+        <p>speed: {props.speed}</p>
+        <p> {props.children}</p>
       </div>
     );
 };
 
 export default Cars;
+
+
+ 
