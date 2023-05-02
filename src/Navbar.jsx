@@ -1,7 +1,7 @@
 import React from 'react';
 import "./App.css"
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
       <div>
         <ul className="ul-list">
@@ -9,6 +9,7 @@ const Navbar = () => {
           <li>About</li>
           <li>Contact</li>
           <li>Social</li>
+          <span>{props.about}</span>
         </ul>
       </div>
     );

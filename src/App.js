@@ -8,8 +8,8 @@ function App(props) {
     <div className="App">
       <button>hello</button>
       <p>{props.model}</p>
-      <Cars model="bmw" speed="250 km/h">im super speed</Cars>
-      <Navbar />
+      <Cars model="bmw" speed="250 km/h">super speed</Cars>
+      <Navbar about="british" />
 
     </div>
   );
