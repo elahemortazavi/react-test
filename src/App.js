@@ -3,6 +3,7 @@ import './App.css';
 import Cars from "./Cars";
 import Navbar from './Navbar';
 import Cover from './Cover';
+import Counter from './Counter';
 
 
 function App(props) {
@@ -13,6 +14,7 @@ function App(props) {
       <Cars model="bmw" speed="250 km/h">super speed</Cars>
       <Navbar about="british" />
       <Cover />
+      <Counter />
      
 
     </div>
