@@ -5,13 +5,16 @@ import Navbar from './Navbar';
 import Cover from './Cover';
 import Counter from './Counter';
 import Context from './Context';
+import NewContext from './NewContext';
 
 
 export const NameContext = React.createContext();
+export const AgeContext = React.createContext();
 
 function App(props) {
   
-  const[name, setName] = useState("milad")
+  const[name, setName] = useState("milad");
+  const [age, setAge] = useState(10);
 
   return (
     <div className="App">
@@ -24,8 +27,11 @@ function App(props) {
       <Cover />
       <Counter />
       <NameContext.Provider value={name}>
-        <Context name={name}/>
+        <Context name={name} />
       </NameContext.Provider>
+      <AgeContext.Provider value={age}>
+        <NewContext age={name} />
+      </AgeContext.Provider>
     </div>
   );
 }
