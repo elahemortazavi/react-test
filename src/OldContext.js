@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
+import { FamilyContext } from './App';
 
 const OldContext = () => {
-    const family = useContext(OldContext);
+    const family = useContext(FamilyContext);
 
     return (
         <div>
