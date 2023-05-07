@@ -46,8 +46,9 @@ function App(props) {
       </FamilyContext.Provider>
 
       <EmailContext.Provider value={email}>
-        <OldContext family={family} />
+        <OldContext email={email} />
       </EmailContext.Provider>
+      
     </div>
   );
 }
