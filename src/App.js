@@ -7,12 +7,14 @@ import Counter from './Counter';
 import Context from './Context';
 import NewContext from './NewContext';
 import OldContext from "./OldContext"
+import MediumContext from './MediumContext';
 
 
 export const NameContext = React.createContext();
 export const AgeContext = React.createContext();
 export const FamilyContext = React.createContext();
 export const EmailContext = React.createContext();
+
 
 function App(props) {
   
@@ -46,9 +48,9 @@ function App(props) {
       </FamilyContext.Provider>
 
       <EmailContext.Provider value={email}>
-        <OldContext email={email} />
+        <MediumContext email={email} />
       </EmailContext.Provider>
-      
+
     </div>
   );
 }
