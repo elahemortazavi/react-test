@@ -12,12 +12,14 @@ import OldContext from "./OldContext"
 export const NameContext = React.createContext();
 export const AgeContext = React.createContext();
 export const FamilyContext = React.createContext();
+export const EmailContext = React.createContext();
 
 function App(props) {
   
   const[name, setName] = useState("milad");
   const [age, setAge] = useState(10);
   const [family, setFamily] = useState("king");
+  const [email, setEmail] = useState("something@gmail.com");
 
 
   return (
@@ -43,6 +45,9 @@ function App(props) {
         <OldContext family={family} />
       </FamilyContext.Provider>
 
+      <EmailContext.Provider value={email}>
+        <OldContext family={family} />
+      </EmailContext.Provider>
     </div>
   );
 }
