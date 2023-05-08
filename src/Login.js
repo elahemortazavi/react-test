@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
+import useTitle from './useTitle';
 
 const Login = () => {
 
-     useEffect(() => {
-        document.title = "login page"
+    //  useEffect(() => {
+    //     document.title = "login page"
 
-    }, [])
+    // }, [])
 
     return (
         <div>

@@ -24,6 +24,7 @@ function App(props) {
   const [age, setAge] = useState(10);
   const [family, setFamily] = useState("king");
   const [email, setEmail] = useState("something@gmail.com");
+  const[toggle, setToggle] = useState(true);
 
 
   return (
@@ -52,6 +53,11 @@ function App(props) {
       <EmailContext.Provider value={email}>
         <MediumContext email={email} />
       </EmailContext.Provider>
+      
+      <div>
+        <button onClick={() => setToggle(!toggle)}>Toggle</button>
+        {toggle ? <Landing /> : <Login />}
+      </div>
 
     </div>
   );
