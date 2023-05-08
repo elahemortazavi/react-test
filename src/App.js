@@ -8,6 +8,8 @@ import Context from './Context';
 import NewContext from './NewContext';
 import OldContext from "./OldContext"
 import MediumContext from './MediumContext';
+import Login from "./Login";
+import Landing from "./Landing";
 
 
 export const NameContext = React.createContext();
