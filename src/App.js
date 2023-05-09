@@ -10,12 +10,14 @@ import OldContext from "./OldContext"
 import MediumContext from './MediumContext';
 import Login from "./Login";
 import Landing from "./Landing";
+import ShowContext from './ShowContext';
 
 
 export const NameContext = React.createContext();
 export const AgeContext = React.createContext();
 export const FamilyContext = React.createContext();
 export const EmailContext = React.createContext();
+export const TvShowContext = React.createContext();
 
 
 function App(props) {
@@ -25,6 +27,7 @@ function App(props) {
   const [family, setFamily] = useState("king");
   const [email, setEmail] = useState("something@gmail.com");
   const[toggle, setToggle] = useState(true);
+  const [show, setShow] = useState("breaking bad");
 
 
   return (
@@ -53,12 +56,15 @@ function App(props) {
       <EmailContext.Provider value={email}>
         <MediumContext email={email} />
       </EmailContext.Provider>
-      
+
+      <TvShowContext.Provider value={show}>
+        <NewContext show={show} />
+      </TvShowContext.Provider>
+
       <div>
         <button onClick={() => setToggle(!toggle)}>Toggle</button>
         {toggle ? <Landing /> : <Login />}
       </div>
-
     </div>
   );
 }
