@@ -58,7 +58,7 @@ function App(props) {
       </EmailContext.Provider>
 
       <TvShowContext.Provider value={show}>
-        <NewContext show={show} />
+        <ShowContext show={show} />
       </TvShowContext.Provider>
 
       <div>
