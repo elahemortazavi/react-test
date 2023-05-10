@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { PostcodeContext } from "./App";
 
 const AddressContext = () => {
-  const email = useContext(PostcodeContext);
+  const postcode = useContext(PostcodeContext);
 
   return (
     <div>

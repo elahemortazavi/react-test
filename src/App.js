@@ -11,6 +11,7 @@ import MediumContext from './MediumContext';
 import Login from "./Login";
 import Landing from "./Landing";
 import ShowContext from './ShowContext';
+import AddressContext from './AddressContext';
 
 
 export const NameContext = React.createContext();
@@ -18,6 +19,7 @@ export const AgeContext = React.createContext();
 export const FamilyContext = React.createContext();
 export const EmailContext = React.createContext();
 export const TvShowContext = React.createContext();
+export const PostcodeContext = React.createContext();
 
 
 function App(props) {
@@ -28,6 +30,7 @@ function App(props) {
   const [email, setEmail] = useState("something@gmail.com");
   const[toggle, setToggle] = useState(true);
   const [show, setShow] = useState("breaking bad");
+  const [postcode, setPostcode] = useState("w12trx")
 
 
   return (
@@ -60,6 +63,10 @@ function App(props) {
       <TvShowContext.Provider value={show}>
         <ShowContext show={show} />
       </TvShowContext.Provider>
+
+      <PostcodeContext.Provider value={show}>
+        <AddressContext postcode={postcode} />
+      </PostcodeContext.Provider>
 
       <div>
         <button onClick={() => setToggle(!toggle)}>Toggle</button>
