@@ -64,7 +64,7 @@ function App(props) {
         <ShowContext show={show} />
       </TvShowContext.Provider>
 
-      <PostcodeContext.Provider value={show}>
+      <PostcodeContext.Provider value={postcode}>
         <AddressContext postcode={postcode} />
       </PostcodeContext.Provider>
 
