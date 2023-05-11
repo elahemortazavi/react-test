@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { NumberContext } from "./App";
+import { PhoneContext } from "./App";
 
 const NumberContext = () => {
-  const phone = useContext(PhoneContext);
+  const phone = useContext(NumberContext);
   return (
     <div>
       <h1>NumberContext: {phone}</h1>

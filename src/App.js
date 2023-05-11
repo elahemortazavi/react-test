@@ -12,6 +12,7 @@ import Login from "./Login";
 import Landing from "./Landing";
 import ShowContext from './ShowContext';
 import AddressContext from './AddressContext';
+import NumberContext from './NumberContext';
 
 
 export const NameContext = React.createContext();
@@ -32,7 +33,7 @@ function App(props) {
   const[toggle, setToggle] = useState(true);
   const [show, setShow] = useState("breaking bad");
   const [postcode, setPostcode] = useState("w12trx");
-  const [phone, setPhone] = useState(09976853376)
+  const [phone, setPhone] = useState(0)
 
 
   return (
@@ -69,6 +70,10 @@ function App(props) {
       <PostcodeContext.Provider value={postcode}>
         <AddressContext postcode={postcode} />
       </PostcodeContext.Provider>
+
+      <PhoneContext.Provider value={phone}>
+        <NumberContext phone={phone} />
+      </PhoneContext.Provider>
 
       <div>
         <button onClick={() => setToggle(!toggle)}>Toggle</button>
