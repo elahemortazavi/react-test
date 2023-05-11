@@ -33,7 +33,7 @@ function App(props) {
   const[toggle, setToggle] = useState(true);
   const [show, setShow] = useState("breaking bad");
   const [postcode, setPostcode] = useState("w12trx");
-  const [phone, setPhone] = useState(0)
+  const [phone, setPhone] = useState('00667543209')
 
 
   return (
