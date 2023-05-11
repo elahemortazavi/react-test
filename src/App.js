@@ -20,6 +20,7 @@ export const FamilyContext = React.createContext();
 export const EmailContext = React.createContext();
 export const TvShowContext = React.createContext();
 export const PostcodeContext = React.createContext();
+export const PhoneContext = React.createContext();
 
 
 function App(props) {
@@ -30,7 +31,8 @@ function App(props) {
   const [email, setEmail] = useState("something@gmail.com");
   const[toggle, setToggle] = useState(true);
   const [show, setShow] = useState("breaking bad");
-  const [postcode, setPostcode] = useState("w12trx")
+  const [postcode, setPostcode] = useState("w12trx");
+  const [phone, setPhone] = useState(09976853376)
 
 
   return (
