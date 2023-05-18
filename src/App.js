@@ -22,6 +22,7 @@ export const EmailContext = React.createContext();
 export const TvShowContext = React.createContext();
 export const PostcodeContext = React.createContext();
 export const PhoneContext = React.createContext();
+export const SoldContext = React.createContext();
 
 
 function App(props) {
@@ -33,7 +34,8 @@ function App(props) {
   const[toggle, setToggle] = useState(true);
   const [show, setShow] = useState("breaking bad");
   const [postcode, setPostcode] = useState("w12trx");
-  const [phone, setPhone] = useState('00667543209')
+  const [phone, setPhone] = useState('00667543209');
+  const [sold, setSold] = useState(3);
 
 
   return (
@@ -74,6 +76,10 @@ function App(props) {
       <PhoneContext.Provider value={phone}>
         <NumberContext phone={phone} />
       </PhoneContext.Provider>
+
+      <SoldContext.Provider value={sold}>
+        <SoldCarsContext sold={sold} />
+      </SoldContext.Provider>
 
       <div>
         <button onClick={() => setToggle(!toggle)}>Toggle</button>
