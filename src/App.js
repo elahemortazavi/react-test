@@ -13,7 +13,7 @@ import Landing from "./Landing";
 import ShowContext from './ShowContext';
 import AddressContext from './AddressContext';
 import NumberContext from './NumberContext';
-
+import SoldCarsContext from './SoldCarsContext';
 
 export const NameContext = React.createContext();
 export const AgeContext = React.createContext();
