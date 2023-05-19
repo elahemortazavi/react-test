@@ -1,6 +1,9 @@
 *{
   background-color: antiquewhite;
 }
+button {
+  background-color: aquamarine;
+}
 
 .App {
   text-align: center;
