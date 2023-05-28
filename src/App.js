@@ -23,6 +23,7 @@ export const TvShowContext = React.createContext();
 export const PostcodeContext = React.createContext();
 export const PhoneContext = React.createContext();
 export const SoldContext = React.createContext();
+export const BestSoldContext = React.createContext();
 
 
 function App(props) {
@@ -36,6 +37,7 @@ function App(props) {
   const [postcode, setPostcode] = useState("w12trx");
   const [phone, setPhone] = useState('00667543209');
   const [sold, setSold] = useState(3);
+  const [car, setCar] = useState("Benz");
 
 
   return (
@@ -80,10 +82,10 @@ function App(props) {
       <SoldContext.Provider value={sold}>
         <SoldCarsContext sold={sold} />
       </SoldContext.Provider>
-      
-      <AgeContext.Provider value={age}>
-        <NewContext age={name} />
-      </AgeContext.Provider>
+
+      <BestSold.Provider value={car}>
+        <BestSeller car={car} />
+      </BestSold.Provider>
 
       <div>
         <button onClick={() => setToggle(!toggle)}>Toggle</button>
