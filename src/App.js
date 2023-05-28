@@ -80,6 +80,7 @@ function App(props) {
       <SoldContext.Provider value={sold}>
         <SoldCarsContext sold={sold} />
       </SoldContext.Provider>
+      
 
       <div>
         <button onClick={() => setToggle(!toggle)}>Toggle</button>
