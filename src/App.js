@@ -14,6 +14,7 @@ import ShowContext from './ShowContext';
 import AddressContext from './AddressContext';
 import NumberContext from './NumberContext';
 import SoldCarsContext from './SoldCarsContext';
+import BestSeller from './Best Seller';
 
 export const NameContext = React.createContext();
 export const AgeContext = React.createContext();
@@ -83,9 +84,9 @@ function App(props) {
         <SoldCarsContext sold={sold} />
       </SoldContext.Provider>
 
-      <BestSold.Provider value={car}>
+      <BestSoldContext.Provider value={car}>
         <BestSeller car={car} />
-      </BestSold.Provider>
+      </BestSoldContext.Provider>
 
       <div>
         <button onClick={() => setToggle(!toggle)}>Toggle</button>
