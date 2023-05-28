@@ -81,6 +81,9 @@ function App(props) {
         <SoldCarsContext sold={sold} />
       </SoldContext.Provider>
       
+      <AgeContext.Provider value={age}>
+        <NewContext age={name} />
+      </AgeContext.Provider>
 
       <div>
         <button onClick={() => setToggle(!toggle)}>Toggle</button>
