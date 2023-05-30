@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import { AgeContext } from "./App";
 
-const NewContext = () => {
+const MobileBrandContext = () => {
   const age = useContext(AgeContext);
   return (
     <div>
-      <h1>component NewContext: {age}</h1>
+      <h1>component MobileBrandContext: {age}</h1>
     </div>
   );
 };
 
-export default NewContext;
+export default MobileBrandContext;
