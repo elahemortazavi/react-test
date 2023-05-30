@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import { AgeContext } from "./App";
+import { MobileContext } from "./App";
 
 const MobileBrandContext = () => {
-  const age = useContext(AgeContext);
+  const brand = useContext(MobileContext);
   return (
     <div>
-      <h1>component MobileBrandContext: {age}</h1>
+      <h1>component MobileBrandContext: {brand}</h1>
     </div>
   );
 };

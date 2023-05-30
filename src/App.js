@@ -41,7 +41,7 @@ function App(props) {
   const [phone, setPhone] = useState('00667543209');
   const [sold, setSold] = useState(3);
   const [car, setCar] = useState("Benz");
-  const [phone, setPhone] = useState("Apple")
+  const [brand, setBrand] = useState("Apple")
 
 
   return (
@@ -91,8 +91,8 @@ function App(props) {
         <BestSeller car={car} />
       </BestSoldContext.Provider>
 
-      <MobileContext.Provider value={phone}>
-        <MobileBrandContext phone={phone} />
+      <MobileContext.Provider value={brand}>
+        <MobileBrandContext brand={brand} />
       </MobileContext.Provider>
 
       <div>
