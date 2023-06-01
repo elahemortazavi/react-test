@@ -99,8 +99,8 @@ function App(props) {
         <MobileBrandContext brand={brand} />
       </MobileContext.Provider>
 
-      <GameTypeContext.Provider value={age}>
-        <GameContext age={name} />
+      <GameTypeContext.Provider value={game}>
+        <GameContext game={game} />
       </GameTypeContext.Provider>
 
       <div>
