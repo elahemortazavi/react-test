@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import { AgeContext } from "./App";
+import { GameTypeContext } from "./App";
 
 const GameContext = () => {
-  const age = useContext(AgeContext);
+  const game = useContext(GameTypeContext);
   return (
     <div>
-      <h1>component GameContext: {age}</h1>
+      <h1>component GameContext: {game}</h1>
     </div>
   );
 };
