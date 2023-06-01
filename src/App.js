@@ -99,6 +99,10 @@ function App(props) {
         <MobileBrandContext brand={brand} />
       </MobileContext.Provider>
 
+      <GameTypeContext.Provider value={age}>
+        <GameContext age={name} />
+      </GameTypeContext.Provider>
+
       <div>
         <button onClick={() => setToggle(!toggle)}>Toggle</button>
         {toggle ? <Landing /> : <Login />}
