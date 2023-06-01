@@ -16,6 +16,7 @@ import NumberContext from './NumberContext';
 import SoldCarsContext from './SoldCarsContext';
 import BestSeller from './Best Seller';
 import MobileBrandContext from './MobileBrandsContext';
+import GameContext from './GameContext';
 
 export const NameContext = React.createContext();
 export const AgeContext = React.createContext();
@@ -27,6 +28,7 @@ export const PhoneContext = React.createContext();
 export const SoldContext = React.createContext();
 export const BestSoldContext = React.createContext();
 export const MobileContext = React.createContext();
+export const GameTypeContext = React.createContext();
 
 
 function App(props) {
@@ -41,7 +43,9 @@ function App(props) {
   const [phone, setPhone] = useState('00667543209');
   const [sold, setSold] = useState(3);
   const [car, setCar] = useState("Benz");
-  const [brand, setBrand] = useState("Apple")
+  const [brand, setBrand] = useState("Apple");
+  const [game, setGame] = useState("candy crash");
+
 
 
   return (
